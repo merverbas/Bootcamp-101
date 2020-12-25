@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+ 
+}
+:root{
+    --btncolor:#fff;
+    --btnbgcolor: #A3DC00;
+    --btnbradius: 6px;
+    --btnfsize: 16px;
+    --btnfweight: bold;
+    --fstyle: normal;
+    --fcolor: #1B0A42;
+    --flineheight: 24px;
+
+}
+$fweight: normal;
+$fsize: 16px;
+$lspacing: 0.02em;
+
+.card{
+    max-width: 1600px;
+    max-height: 920px;
+    margin: auto;
+     
+
+    &__header{
+        background-color: #fff;
+        padding-bottom: 10px;
+        display: block;
+        position: relative;
+        
+
+        &--medi{
+            display: inline-block;
+            font-size: 30px;
+            letter-spacing: -0.02em;
+
+            img{
+                width: 95.25px;
+                height: 40.61px;
+                left: 80px;
+                top: 37px;
+            }
+        }
+
+        &--nav{
+            display: inline-block;
+            margin-left: 97.5px;
+
+            &-menu{
+                list-style: none;
+            
+                li{
+                    display: inline-block;
+                    margin: 48px 34.18px 0 0;
+
+                    a{
+                        text-decoration: none;
+                        font-style: var(--fstyle);
+                        line-height: var(--flineheight);
+                        color: var(--fcolor); 
+                        font-weight: $fweight;
+                        font-size: $fsize;                    
+                        letter-spacing: $lspacing;
+                        text-align: center;
+                          
+                     
+                    }
+                }
+            }
+        }
+
+        &--sign{
+            display: inline-block;
+            position: absolute;
+            right: 67.74px;
+            top: 48px;
+            
+           
+            a{
+                font-style: var(--fstyle);
+                font-weight: $fweight;
+                font-size: $fsize;
+                line-height: var(--flineheight);                
+                letter-spacing: $lspacing;
+                color: var(--fcolor);
+                margin-right: 40.3px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            &--but1{ 
+                position: absolute;
+                background: var(--btnbgcolor);               
+                border-radius:var(--btnbradius);
+                letter-spacing: $lspacing;
+                color: var(--btncolor);
+                font-style: var(--fstyle);
+                font-weight: var(--btnfweight);
+                font-size: var(--btnfsize);
+                line-height: var(--flineheight);
+                top: -18px;
+                width: 120px;
+                height: 59.65px;              
+                text-align: center;
+               
+                
+                
+
+            }
+            
+        }
+
+    }
+   
+    &__desc{
+        position: relative;
+
+        h1{
+            position: absolute;
+            width: 495px;
+            height: 152px;
+            left: 200px;
+            top: 20.71px;
+            font-family: Ramaraja;
+            font-style: var(--fstyle);
+            font-weight: $fweight;            
+            letter-spacing: $lspacing;
+            color: var(--fcolor);
+            font-size: 72px;
+            line-height: 76px;
+        }
+        p{
+           position: absolute;
+           font-style: var(--fstyle);
+           font-weight: $fweight;
+           letter-spacing: $lspacing;
+           width: 582.71px;
+           height: 96px;
+           left: 200px;
+           top: 342.71px;          
+           font-size: 20px;
+           line-height: 32px;           
+           color: #9A9A9A;
+
+        }
+        &--but2{
+            position: absolute;
+            width: 87.57px;
+            height: 27.82px;
+            left: 232.21px;
+            top: 306.71px;
+            font-style: var(--fstyle);
+            font-weight: var(--btnfweight);
+            font-size: var(--btnfsize);
+            letter-spacing: $lspacing;
+            color: var(--btncolor);
+            background: var(--btnbgcolor);
+            border-radius:var(--btnbradius);
+            line-height: 32px;
+            text-align: center;        
+            width: 152px;
+            height: 63.82px;
+            left: 200px;
+            top: 588.71px;
+            
+           
+
+            
+            
+        }
+
+        &--frame{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0;
+           
+        }
+
+    }
+}
+
